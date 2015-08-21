@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- GA请求组 -->
+<GaQueryGroup>
+    <!--订单的query请求  -->
+	<query>
+		<description>OrderQuery</description>
+		<metrics>
+			<metric>ga:itemQuantity,</metric>
+			<metric>ga:totalValue,</metric>
+			<metric>ga:sessions</metric>
+		</metrics>
+		<dimensions>
+			<dimension>ga:transactionId,</dimension>
+			<dimension>ga:date,</dimension>
+			<dimension>ga:sourceMedium,</dimension>
+			<dimension>ga:campaign,</dimension>
+			<dimension>ga:keyword,</dimension>
+			<dimension>ga:region,</dimension>
+			<dimension>ga:city</dimension>
+		</dimensions>
+		<maxResults>10000</maxResults>
+	</query>
+</GaQueryGroup>
